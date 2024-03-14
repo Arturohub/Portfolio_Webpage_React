@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio_Webpage_React%20/static/css/main.243931c1.css",
-    "main.js": "/Portfolio_Webpage_React%20/static/js/main.5cfd2fba.js",
-    "static/media/yo.mp4": "/Portfolio_Webpage_React%20/static/media/yo.29d8c8b25912d098b930.mp4",
-    "static/media/img2.jpg": "/Portfolio_Webpage_React%20/static/media/img2.5ca2715d34196a94729c.jpg",
-    "static/media/img3.jpg": "/Portfolio_Webpage_React%20/static/media/img3.692846f7770ceca3fb51.jpg",
-    "static/media/img4.jpg": "/Portfolio_Webpage_React%20/static/media/img4.3368cc0601ced4c35a92.jpg",
-    "static/media/img5.jpg": "/Portfolio_Webpage_React%20/static/media/img5.b5fa4bd84e406a198e8c.jpg",
-    "static/media/img1.jpg": "/Portfolio_Webpage_React%20/static/media/img1.c2cc6c3da3647332566b.jpg",
-    "static/media/img8.jpg": "/Portfolio_Webpage_React%20/static/media/img8.344a437c19caebc59de4.jpg",
-    "static/media/img6.jpg": "/Portfolio_Webpage_React%20/static/media/img6.bcfdc618caeee538f7f0.jpg",
-    "static/media/img7.jpg": "/Portfolio_Webpage_React%20/static/media/img7.e781a26740f2ea99869d.jpg",
-    "static/media/cinema.jpg": "/Portfolio_Webpage_React%20/static/media/cinema.616fc1afef60ea68f264.jpg",
-    "static/media/seats.jpg": "/Portfolio_Webpage_React%20/static/media/seats.faf1ee56c8d5e67df590.jpg",
-    "static/media/moviescreen.jpg": "/Portfolio_Webpage_React%20/static/media/moviescreen.954347105fcc51580b3d.jpg",
-    "static/media/smartphone.jpg": "/Portfolio_Webpage_React%20/static/media/smartphone.cfa97c929159a33b4407.jpg",
-    "index.html": "/Portfolio_Webpage_React%20/index.html",
-    "main.243931c1.css.map": "/Portfolio_Webpage_React%20/static/css/main.243931c1.css.map",
-    "main.5cfd2fba.js.map": "/Portfolio_Webpage_React%20/static/js/main.5cfd2fba.js.map"
+    "main.css": "/Portfolio_Webpage_React/static/css/main.243931c1.css",
+    "main.js": "/Portfolio_Webpage_React/static/js/main.a4157661.js",
+    "static/media/yo.mp4": "/Portfolio_Webpage_React/static/media/yo.29d8c8b25912d098b930.mp4",
+    "static/media/img2.jpg": "/Portfolio_Webpage_React/static/media/img2.5ca2715d34196a94729c.jpg",
+    "static/media/img3.jpg": "/Portfolio_Webpage_React/static/media/img3.692846f7770ceca3fb51.jpg",
+    "static/media/img4.jpg": "/Portfolio_Webpage_React/static/media/img4.3368cc0601ced4c35a92.jpg",
+    "static/media/img5.jpg": "/Portfolio_Webpage_React/static/media/img5.b5fa4bd84e406a198e8c.jpg",
+    "static/media/img1.jpg": "/Portfolio_Webpage_React/static/media/img1.c2cc6c3da3647332566b.jpg",
+    "static/media/img8.jpg": "/Portfolio_Webpage_React/static/media/img8.344a437c19caebc59de4.jpg",
+    "static/media/img6.jpg": "/Portfolio_Webpage_React/static/media/img6.bcfdc618caeee538f7f0.jpg",
+    "static/media/img7.jpg": "/Portfolio_Webpage_React/static/media/img7.e781a26740f2ea99869d.jpg",
+    "static/media/cinema.jpg": "/Portfolio_Webpage_React/static/media/cinema.616fc1afef60ea68f264.jpg",
+    "static/media/seats.jpg": "/Portfolio_Webpage_React/static/media/seats.faf1ee56c8d5e67df590.jpg",
+    "static/media/moviescreen.jpg": "/Portfolio_Webpage_React/static/media/moviescreen.954347105fcc51580b3d.jpg",
+    "static/media/smartphone.jpg": "/Portfolio_Webpage_React/static/media/smartphone.cfa97c929159a33b4407.jpg",
+    "index.html": "/Portfolio_Webpage_React/index.html",
+    "main.243931c1.css.map": "/Portfolio_Webpage_React/static/css/main.243931c1.css.map",
+    "main.a4157661.js.map": "/Portfolio_Webpage_React/static/js/main.a4157661.js.map"
   },
   "entrypoints": [
     "static/css/main.243931c1.css",
-    "static/js/main.5cfd2fba.js"
+    "static/js/main.a4157661.js"
   ]
 }
