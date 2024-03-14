@@ -15,7 +15,7 @@ const corsOptions = {
     optionSuccessStatus: 200
 }
 app.use(cors(corsOptions))
-app.use("/api", router)
+app.use("/", router)
 
 const dbOptions = {useNewUrlParser:true, useUnifiedTopology:true}
 
