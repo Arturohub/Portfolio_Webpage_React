@@ -5,7 +5,7 @@ import Skills from "../pages/Skills"
 import Projects from "../pages/Projects"
 import About from "../pages/About"
 import Contact from "../pages/Contact"
-import { HashRouter, Routes, Route, Outlet } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom"
 
 export default function Router(){
 
@@ -18,7 +18,7 @@ export default function Router(){
         )
     }
     return (
-    <HashRouter>
+    <BrowserRouter>
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route path="/" element={<Home />} />
@@ -29,6 +29,6 @@ export default function Router(){
                 <Route path="/contact" element={<Contact />} />
             </Route>
         </Routes>  
-    </HashRouter>
+    </BrowserRouter>
     )
 }
