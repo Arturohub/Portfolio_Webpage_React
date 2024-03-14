@@ -18,12 +18,6 @@ export default function Contact(){
 
         await axios.post("https://portfolio-webpage-react-backend.onrender.com", postData)
         .then(res => setError(<p className="success">{res.data}</p>))
-        .catch(err => {
-    
-            console.error(err);
-            setError(<p className="error">An error occurred while sending your message. Please try again.</p>)
-        });
-        
     }
 
     const handleSubmit = (event) => {
