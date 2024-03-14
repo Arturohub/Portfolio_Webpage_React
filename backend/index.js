@@ -15,6 +15,7 @@ const corsOptions = {
     optionSuccessStatus: 200
 }
 app.use(cors(corsOptions))
+
 app.use("/", router)
 
 const dbOptions = {useNewUrlParser:true, useUnifiedTopology:true}
@@ -27,4 +28,3 @@ const port = process.env.PORT
 const server = app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })
-

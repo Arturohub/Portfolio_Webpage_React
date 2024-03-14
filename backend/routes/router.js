@@ -3,7 +3,7 @@ const router = express.Router()
 const schemas = require("../models/schemas")
 const nodemailer = require("nodemailer")
 
-router.post("/contact", async(req, res) => {
+router.post("https://portfolio-webpage-react-backend.vercel.app/api/contact", async(req, res) => {
     const {name, email, message} = req.body
 
     const newContact = new schemas.Contact({name: name, email: email, message: message})
