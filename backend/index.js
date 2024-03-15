@@ -1,6 +1,7 @@
 const express = require("express");
 const router = require("./routes/router");
 const mongoose = require("mongoose");
+const cors = require("cors"); // Added cors middleware
 require("dotenv/config");
 
 const app = express();
@@ -9,14 +10,23 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-app.use((req, res, next) => {
+const allowedOrigins = [
+  'https://portfolio-webpage-react-frontend-fqlav7ili.vercel.app',
+  'https://portfolio-webpage-react-frontend.vercel.app'
+];
 
-  res.header("Access-Control-Allow-Origin", "https://portfolio-webpage-react-frontend.vercel.app");
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  res.header("Access-Control-Allow-Credentials", "true"); 
-  next();
-});
+app.use(cors({
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
 
 app.use("/", router);
 
