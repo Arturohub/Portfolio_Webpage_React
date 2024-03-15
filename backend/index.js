@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+
 const router = require("./routes/router");
 const mongoose = require("mongoose");
 require("dotenv/config");
@@ -9,12 +9,14 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const corsOptions = {
-  origin: ["https://portfolio-webpage-react-backend.vercel.app", "https://portfolio-webpage-react-frontend.vercel.app"],
-  credentials: true,
-};
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://portfolio-webpage-react-frontend.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  next();
+});
 
-app.use(cors(corsOptions));
 app.use("/", router);
 
 const dbOptions = { useNewUrlParser: true, useUnifiedTopology: true };
