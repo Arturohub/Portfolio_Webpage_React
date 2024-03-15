@@ -17,7 +17,7 @@ export default function Contact(){
         }
     
         try {
-            await axios.post("https://portfolio-webpage-react-backend.vercel.app/contact", postData);
+            await axios.post("https://portfolio-webpage-react-backend.vercel.app/contact", postData, { withCredentials: true });
             setError(<p className="success">Message sent. Thanks for contacting me!!</p>);
         } catch (error) {
             setError(<p className="error">Failed to send message! Please, try again :D</p>);
