@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const corsOptions = {
-  origin: ["https://arturochicavilla-backend.onrender.com", "https://arturochicavilla.onrender.com"],
+  origin: ["https://portfolio-webpage-react-backend.vercel.app", "https://portfolio-webpage-react-frontend.vercel.app"],
   credentials: true,
 };
 
