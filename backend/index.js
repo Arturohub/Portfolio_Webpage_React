@@ -1,7 +1,7 @@
 const express = require("express");
 const router = require("./routes/router");
 const mongoose = require("mongoose");
-const cors = require("cors"); // Added cors middleware
+const cors = require("cors"); // Import cors middleware
 require("dotenv/config");
 
 const app = express();
@@ -9,20 +9,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-
-const allowedOrigins = [
-  'https://portfolio-webpage-react-frontend-fqlav7ili.vercel.app',
-  'https://portfolio-webpage-react-frontend.vercel.app'
-];
-
+// Apply cors middleware
 app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: "https://portfolio-webpage-react-frontend.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"],
   credentials: true
