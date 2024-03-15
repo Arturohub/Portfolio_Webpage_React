@@ -1,7 +1,6 @@
 const express = require("express");
 const router = require("./routes/router");
 const mongoose = require("mongoose");
-const cors = require("cors"); // Import cors module
 require("dotenv/config");
 
 const app = express();
@@ -9,10 +8,14 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(cors({
-  origin: "https://portfolio-webpage-react-frontend.vercel.app",
-  credentials: true
-}));
+
+app.use((req, res, next) => {
+
+  res.header("Access-Control-Allow-Origin", "https://portfolio-webpage-react-frontend.vercel.app");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 
 app.use("/", router);
 
@@ -22,8 +25,7 @@ mongoose.connect(process.env.DB_URI, dbOptions)
   .then(() => console.log("DB Connected!"))
   .catch(error => console.log(error));
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
