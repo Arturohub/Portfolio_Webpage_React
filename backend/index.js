@@ -9,7 +9,12 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
-app.use(cors())
+const corsOptions = {
+    origin: "https://arturochicavilla.onrender.com/",
+    credentials: true,
+    optionSuccessStatus: 200
+}
+app.use(cors(corsOptions))
 
 app.use("/", router)
 
