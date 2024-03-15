@@ -75,7 +75,7 @@ export default function Experience() {
                         <h3>From 2014 to 2016, at Wageningen University, The Netherlands</h3>
 
                         <h2>Bachelor Degree, Plant Biotechnology</h2>
-                        <h3>From 2010 to 2014, at Madrid's University, Spain</h3>
+                        <h3>From 2010 to 2014, at University of Madrid, Spain</h3>
                     </div>
                 )}
             </div>
