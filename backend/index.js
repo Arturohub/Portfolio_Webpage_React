@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 const corsOptions = {
-    origin: "https://arturochicavilla.onrender.com/",
+    origin: "https://arturochicavilla-backend.onrender.com/",
     credentials: true,
     optionSuccessStatus: 200
 }
