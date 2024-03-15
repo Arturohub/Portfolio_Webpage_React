@@ -3,7 +3,7 @@ const router = express.Router()
 const schemas = require("../models/schemas")
 const nodemailer = require("nodemailer")
 
-router.post("https://arturochicavilla.onrender.com/contact", async(req, res) => {
+router.post("https://arturochicavilla-backend.onrender.com/contact", async(req, res) => {
     const {name, email, message} = req.body
 
     const newContact = new schemas.Contact({name: name, email: email, message: message})
