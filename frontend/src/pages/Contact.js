@@ -16,7 +16,7 @@ export default function Contact(){
             message: message
         }
 
-        await axios.post("https://arturochicavilla.onrender.com/contact", postData)
+        await axios.post("https://arturochicavilla-backend.onrender.com/contact", postData)
         .then(res => setError(<p className="success">{res.data}</p>))
     }
 
