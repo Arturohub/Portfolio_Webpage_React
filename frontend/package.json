@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://portfolio-webpage-react-backend.vercel.app/contact",
   "eslintConfig": {
     "extends": [
       "react-app",
