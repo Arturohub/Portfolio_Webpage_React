@@ -1,7 +1,8 @@
 const express = require("express");
 const router = require("./routes/router");
 const mongoose = require("mongoose");
-const cors = require("cors"); //
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions")
 require("dotenv/config");
 
 const app = express();
@@ -9,13 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Apply cors middleware
-app.use(cors({
-  origin: "https://portfolio-webpage-react-frontend.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type"],
-  credentials: true
-}));
+app.use(cors(corsOptions))
 
 app.use("/", router);
 
