@@ -17,7 +17,7 @@ export default function Contact(){
         }
     
         try {
-            await axios.post("https://arturochicavilla-backend.onrender.com/", postData, { withCredentials: true });
+            await axios.post("https://arturochicavilla-backend.onrender.com/contact", postData, { withCredentials: true });
             setError(<p className="success">Message sent. Thanks for contacting me!!</p>);
         } catch (error) {
             setError(<p className="error">Failed to send message! Please, try again :D</p>);
