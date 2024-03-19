@@ -1,9 +1,9 @@
 const allowedOrigins = [
+    "*",
     "http://localhost:3000",
-    "https://portfolio-webpage-react-frontend.vercel.app",
-    "https://portfolio-webpage-react-backend.vercel.app",
-    "https://portfolio-webpage-react-frontend.vercel.app/contact",
-    "https://portfolio-webpage-react-backend.vercel.app/contact"
+    "https://arturochicavilla.onrender.com/contact",
+    "https://arturochicavilla.onrender.com",
+    "https://arturochicavilla-backend.onrender.com/"
 ]
 
 module.exports = allowedOrigins
