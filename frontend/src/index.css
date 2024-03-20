@@ -1031,6 +1031,11 @@ input, textarea {
   color: red;
   font-weight: bold;
 }
+.required {
+  color: red;
+  font-weight: bold;
+
+}
 
 .success-container {
   position: fixed;
