@@ -9,7 +9,7 @@ export default function Contact() {
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
     const [submitted, setSubmitted] = useState(false);
-    const [buttonDisabled, setButtonDisabled] = useState(false); // State to manage button disabled state
+    const [buttonDisabled, setButtonDisabled] = useState(false); 
 
     const axiosPostData = async () => {
         const postData = {
